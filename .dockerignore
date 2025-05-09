@@ -1,0 +1,23 @@
+# Игнорировать node_modules — они устанавливаются внутри контейнера
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Сборки (NestJS dist, Next.js .next)
+dist
+.next
+out
+
+# MacOS
+.DS_Store
+
+# Git
+.git
+.gitignore
+
+# Docker файлы и локальные конфиги
+apps/frontend/Dockerfile
+docker-compose.yml
+apps/backend/dist
+.env.local
+.env.*.local
