@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # База данных PostgreSQL
   postgres:
     image: postgres:15
     container_name: quest-platform-postgres
@@ -43,7 +42,6 @@ services:
     depends_on:
       - backend
 
-  # Бэкенд (NestJS)
   backend:
     build:
       context: ./apps/backend
@@ -67,7 +65,6 @@ services:
       postgres:
         condition: service_healthy
 
-  # Инструмент для управления БД (опционально)
   pgadmin:
     image: dpage/pgadmin4
     container_name: quest-platform-pgadmin
