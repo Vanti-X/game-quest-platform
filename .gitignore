@@ -33,11 +33,6 @@ out/
 # MacOS
 .DS_Store
 
-# Docker
-**/Dockerfile*
-**/docker-compose.yml
-docker-compose.override.yml
-
 # Coverage
 coverage/
 apps/**/coverage/
