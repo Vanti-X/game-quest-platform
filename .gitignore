@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+apps/**/node_modules/
+packages/**/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+apps/**/dist/
+packages/**/dist/
+.next/
+apps/**/.next/
+packages/**/.next/
+out/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# dotenv
+.env
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Docker
+**/Dockerfile*
+**/docker-compose.yml
+docker-compose.override.yml
+
+# Coverage
+coverage/
+apps/**/coverage/
+packages/**/coverage/
